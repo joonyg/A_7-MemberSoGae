@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+* {
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1rem;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar-items > li:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.banner {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.members {
+  display: flex;
+  gap: 4rem;
+  padding: 2rem;
+  margin-top: 200px;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.card-text {
+  white-space: pre-line;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 3rem;
+  padding: 2rem;
+  margin-top: 200px;
+}
+
+.feature > ul,
+.goal > ul,
+.rule > ul {
+  width: 18rem;
+  height: 18rem;
+  background-color: #e2e2e2;
+  border-radius: 20%;
+  padding: 4rem;
+  list-style: none;
+}
+
+.moveTop {
+  visibility: hidden;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+.moveTop:hover {
+  filter: brightness(150%);
+}
+
+/* 여기서 부터 모달 CSS*/
+#member1_modalOpenButton,
+#member1_modalCloseButton {
+  cursor: pointer;
+}
+
+#member1_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member1_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 150px;
+  padding: 15px;
+}
+
+#member1_modalContainer_1.hidden {
+  display: none;
+}
+
+#member1_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member1_modalContainer_1.hidden {
+  display: none;
+}
+
+#member1_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+}
+/* 여기까지 멤버1카드 모달 CSS*/
+
+/* 여기서 부터 멤버2모달 CSS*/
+
+#member2_modalOpenButton,
+#member2_modalCloseButton {
+  cursor: pointer;
+}
+
+#member2_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member2_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 150px;
+  padding: 15px;
+}
+
+#member2_modalContainer_1.hidden {
+  display: none;
+}
+
+#member2_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member2_modalContainer_1.hidden {
+  display: none;
+}
+
+#member2_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+}
+/* 여기까지 멤버2카드 모달 CSS*/
+/*멤버 3 모달 css*/
+#member3_modalOpenButton,
+#member3_modalCloseButton {
+  cursor: pointer;
+}
+
+#member3_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member3_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 150px;
+  padding: 15px;
+}
+
+#member3_modalContainer_1.hidden {
+  display: none;
+}
+
+#member3_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member3_modalContainer_1.hidden {
+  display: none;
+}
+
+#member3_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+}
+/* 여기까지 멤버3 카드 모달 CSS*/
+
+/*멤버 4 모달 css*/
+#member4_modalOpenButton,
+#member4_modalCloseButton {
+  cursor: pointer;
+}
+
+#member4_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member4_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 150px;
+  padding: 15px;
+}
+
+#member4_modalContainer_1.hidden {
+  display: none;
+}
+
+#member4_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member4_modalContainer_1.hidden {
+  display: none;
+}
+
+#member4_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+}
+/* 여기까지 멤버 4 모달 css*/
+
+/*멤버 5 모달 css*/
+
+#member5_modalOpenButton,
+#member5_modalCloseButton {
+  cursor: pointer;
+}
+
+#member5_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member5_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 150px;
+  padding: 15px;
+}
+
+#member5_modalContainer_1.hidden {
+  display: none;
+}
+
+#member5_modalContainer_1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#member5_modalContainer_1.hidden {
+  display: none;
+}
+
+#member5_modalContent_1 {
+  position: absolute;
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+}
+
+.visit_bacground {
+  background-color: gainsboro;
+
+  width: 620px;
+  height: 490px;
+
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: fantasy;
+}
+
+textarea {
+  resize: none;
+}
+
+.visit_bt {
+  float: right;
+}
+
+.visit_today {
+  font-family: fantasy;
+  text-align: center;
+  float: right;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-right: 80px;
+}
+
+.input-group-text {
+  max-width: 30%;
+  min-width: 20%;
+}
+
+.form-control {
+  resize: none;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.input-group {
+  width: 600px;
+  margin: auto;
+  padding-top: 20px;
+  overflow: auto;
+}
+
+.guestbook {
+  margin-top: 130px;
+  /* background-color: red; */
+}
+
+.guestbook-title {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}

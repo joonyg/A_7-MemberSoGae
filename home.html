@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React 3기 7조</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <i class="fas fa-blog" style="color: #2492f9;"></i>
+        <ul class="navbar-items">
+            <li>Members</li>
+            <li>Team</li>
+            <li>GuestBook</li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Web-Masters</h1>
+                <!-- <p class="col-md-8 fs-4">저희 조원은 전태현,권용준,정유진,윤유빈,최수인 입니다.</p> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="members">
+        <div class="card member1" style="width: 18rem;">
+            <img src="image/member1.jpg" class="card-img-top" alt="조원1 사진">
+            <div class="card-body">
+                <h5 class="card-title">전태현</h5>
+                <p class="card-text">
+                    React 3기 전태현입니다.
+                    잘 부탁드립니다.
+                </p>
+            </div>
+            <button type="button" id="member1_modalOpenButton_1" class="btn btn-outline-primary">멤버들의 TMI 알고가기</button>
+        </div>
+        <!--생성된 모달안에 팀원들 자세한 tmi작성 -->
+        <div id="member1_modalContainer_1" class="modal hidden" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 500px;height:700px;">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> TMI</h5>
+                        <button type="button" id="member1_modalCloseButton_1" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="overflow: auto;">
+                        <div class="introduce">
+                            <img src="image/member1.jpg" 
+                                alt="프로필 사진" style="width: 250px;height: 300px;" />
+                            <div class="detail">
+                                <div class="mbti">
+                                    <h3>MBTI</h3>
+                                    <p>ENTP</p>
+                                </div>
+                                <div class="avantage">
+                                    <h3>장점</h3>
+                                    <p> 장점을 아직 찾는중입니다! </p>
+                                </div>
+                                <div class="tmi">
+                                    <h3>TMI</h3>
+                                    <p>나이많은 강아지와 고양이를 키우고 있습니다!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="member1_modalCloseButton_2" type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--숨겨져 있는 모달 밖에서는 안보여요-->
+
+
+        <div class="card member2" style="width: 18rem;">
+            <img src="image/member2.jpg" class="card-img-top" alt="조원2 사진">
+            <div class="card-body">
+                <h5 class="card-title">권영준</h5>
+                <p class="card-text">
+                    인천에 사는 27살 권영준이라고 합니다.
+                    유니티를 공부하다가 와서 c# 해봤고 자바도 해봤습니다.
+                    부족한게 많아서 발목잡지 않도록 열심히 노력하겠습니다.
+                </p>
+            </div>
+            <button type="button" id="member2_modalOpenButton_1" class="btn btn-outline-primary">멤버들의 TMI 알고가기</button>
+        </div>
+
+        <!--생성된 모달안에 팀원들 자세한 tmi작성 -->
+        <div id="member2_modalContainer_1" class="modal hidden" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 500px;height:700px;">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> TMI</h5>
+                        <button type="button" id="member2_modalCloseButton_1" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="overflow: auto;">
+                        <div class="introduce">
+                            <img src="image/member2.jpg"
+                                alt="프로필 사진" style="width: 250px;height: 300px;" />
+                            <div class="detail">
+                                <div class="mbti">
+                                    <h3>MBTI</h3>
+                                    <p>ISTP</p>
+                                </div>
+                                <div class="avantage">
+                                    <h3>장점</h3>
+                                    <p> 알잘깔딱센하는게 저의 장점입니다!</p>
+                                </div>
+                                <div class="tmi">
+                                    <h3>TMI</h3>
+                                    <p>카페알바를 해와서
+                                        커피 타는거 좋아하고 음료 잘만들어요!!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="member2_modalCloseButton_2" type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--숨겨져 있는 모달 밖에서는 안보여요-->
+
+
+
+        <div class="card member3" style="width: 18rem;">
+            <img src="image/member3.jpg" alt="조원3 사진">
+            <div class="card-body">
+                <h5 class="card-title">정유진</h5>
+                <p class="card-text">안녕하세요.
+                    React 3기 정유진입니다.</p>
+                문제를 유연하게 대처하는 개발자가 되겠습니다!</p>
+            </div>
+            <button type="button" id="member3_modalOpenButton_1" class="btn btn-outline-primary">멤버들의 TMI 알고가기</button>
+        </div>
+
+        <!--생성된 모달안에 팀원들 자세한 tmi작성 -->
+        <div id="member3_modalContainer_1" class="modal hidden" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 500px;height:700px;">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> TMI</h5>
+                        <button type="button" id="member3_modalCloseButton_1" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="overflow: auto;">
+                        <div class="introduce">
+                            <img src="image/member3.jpg"
+                                alt="프로필 사진" style="width: 250px;height: 300px;" />
+                            <div class="detail">
+                                <div class="mbti">
+                                    <h3>MBTI</h3>
+                                    <p></p>
+                                </div>
+                                <div class="avantage">
+                                    <h3>장점</h3>
+                                    <p>상대방 의견을 잘 수용하는 편입니다. </p>
+                                </div>
+                                <div class="tmi">
+                                    <h3>TMI</h3>
+                                    <p>강아지를 좋아하며 산책하는 것을 좋아합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="member3_modalCloseButton_2" type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--숨겨져 있는 모달 밖에서는 안보여요-->
+
+
+
+        <div class="card member4" style="width: 18rem;">
+            <img src="image/member4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">윤유빈</h5>
+                <p class="card-text">
+                    안녕하세요!
+                    코린이 탈출하고 싶은 코린이입니다!
+                </p>
+            </div>
+            <button type="button" id="member4_modalOpenButton_1" class="btn btn-outline-primary"
+                style="margin-top: 20px;">멤버들의 TMI 알고가기</button>
+        </div>
+        <!--생성된 모달안에 팀원들 자세한 tmi작성 -->
+        <div id="member4_modalContainer_1" class="modal hidden" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 500px;height:700px;">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> TMI</h5>
+                        <button type="button" id="member4_modalCloseButton_1" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="overflow: auto;">
+                        <div class="introduce">
+                            <img src="image/member4.jpg"
+                            alt="프로필 사진" style="width: 250px;height: 300px;" />
+                            <div class="detail">
+                                <div class="mbti">
+                                    <h3>MBTI</h3>
+                                    <p>>ISFP</p>
+                                </div>
+                                <div class="avantage">
+                                    <h3>장점</h3>
+                                    <p> 부정적인 것을 잘 잊는다. </p>
+                                </div>
+                                <div class="tmi">
+                                    <h3>TMI</h3>
+                                    <p>야구를 아주아주 좋아한다 (NC화이팅!)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="member4_modalCloseButton_2" type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--숨겨져 있는 모달 밖에서는 안보여요-->
+        <div class="card member5" style="width: 18rem;">
+            <img src="image/member5.png" class="card-img-top" alt="조원5 사진">
+            <div class="card-body">
+                <h5 class="card-title">최수인</h5>
+                <p class="card-text">
+                    안녕하세요. React 3기 A조 최수인 입니다.
+                    약 4개월 간의 과정 열심히 배워서 취업에 성공하겠습니다.
+                    감사합니다.
+                </p>
+            </div>
+            <button type="button" id="member5_modalOpenButton_1" class="btn btn-outline-primary"
+                style="margin-top: 20px;">멤버들의 TMI 알고가기</button>
+        </div>
+    </div>
+
+    <!--생성된 모달안에 팀원들 자세한 tmi작성 -->
+    <div id="member5_modalContainer_1" class="modal hidden" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 500px;height:700px;">
+                <div class="modal-header">
+                    <h5 class="modal-title"> TMI</h5>
+                    <button type="button" id="member5_modalCloseButton_1" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="overflow: auto;">
+                    <div class="introduce">
+                        <img src="image/member5.png"
+                        alt="프로필 사진" style="width: 250px;height: 300px;" />
+                        <div class="detail">
+                            <div class="mbti">
+                                <h3>MBTI</h3>
+                                <p>ENTJ</p>
+                            </div>
+                            <div class="avantage">
+                                <h3>장점</h3>
+                                <p>정리를 잘 함 (문서화, 가이드화 하는 업무) </p>
+                            </div>
+                            <div class="tmi">
+                                <h3>TMI</h3>
+                                <p>롤을 굉장히 좋아함 (롤 현 티어 : 플레티넘)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="member5_modalCloseButton_2" type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--숨겨져 있는 모달 밖에서는 안보여요-->
+
+
+
+    <div class="team">
+        <div class="feature">
+            <h3>💡우리 팀의 특징</h3>
+            <ul>
+                <li>i 3명 e 2명인 팀입니다.</li>
+            </ul>
+        </div>
+
+        <div class="goal">
+            <h3>☑️궁극적인 목표</h3>
+
+            <ul>
+                <li>최선을 다하자!</li>
+                <li>git, github 공부하기</li>
+                <li>자바스크립트 문법 공부</li>
+            </ul>
+        </div>
+
+        <div class="rule">
+            <h3>✨우리 팀의 규칙</h3>
+
+            <ul>
+                <li>9:00 ~ 13:00 개인 공부 및 프로젝트 준비</li>
+                <li>14:00 이후 협업 활동하기</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="guestbook">
+<div  class="guestbook-title">
+    <div >
+        <h3 class="guestbook-title">✏️ 방명록</h3>
+    </div>
+
+
+
+    </div>
+
+    <div>
+        <button onclick="writeBox()" type="button" class="btn btn-outline-dark" style="margin: 0px 10px 50px 800px;">방명록 작성</button>
+        <button onclick="showBox()" type="button" class="btn btn-outline-dark" style="margin: 0px 10px 50px 20px;">방명록 목록</button>
+    
+        <div class="visit_bacground" id="write_box" style="display: none;">
+            <h1 >방명록 작성</h1>
+            <div class="mb-3">
+                <label class="form-label" style="padding-left: 20px;">닉네임 </label>
+                <input type="id" class="form-control" id="doinginput_1"
+                    style="width: 120px;margin-left: 20px; margin-right: 10px;" placeholder="닉네임 입력">
+            </div>
+            <div class="mb-5">
+                <label class="form-label" style="padding-left: 20px;">방명록 입력</label>
+                <textarea class="form-control" id="doinginput_2" rows="8" style="margin-left: 20px; margin-right: 10px;"
+                    placeholder="방명록 작성하기"></textarea>
+            </div>
+            <button type="button" onclick="addcheck(this)" style="float: right; margin-right: 20px;"
+                class="btn btn-outline-success">작성하기</button>
+        </div>
+    
+        <div class="visit_bacground" id="show_box" style="overflow: auto; display: none;">
+            <h1>작성된 방명록</h1>
+            <div id="visitlog" style="padding-left: 20px;">
+                <div class="input-group">
+                    <span id="nickname" class="input-group-text">강해상</span>
+                    <div class="form-control" id="visit_dat" aria-label="With textarea" style="overflow:auto;" readonly>너
+                        납치된거야
+                    </div>
+                </div>
+                <span class="visit_today">2023년9월5일 11:13:47</span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <button class="moveTop">Top</button>
+    <script type="text/javascript" src="introduce.js"></script>
+</body>
+
+</html>

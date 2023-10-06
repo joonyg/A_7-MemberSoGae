@@ -1,0 +1,36 @@
+.close {
+    position: absolute;
+    right: 20px;
+}
+
+img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+
+.introduce {
+    width: 30%;
+    margin: 25px auto;
+}
+
+
+.detail {
+    background-color: #a2d2ff;
+    border-radius: 50px;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+}
