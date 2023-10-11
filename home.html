@@ -320,10 +320,12 @@
 
     <div class="guestbook">
         <h3 class="guestbook-title">✏️ 방명록</h3>
-        <button onclick="writeBox()" type="button" class="btn btn-outline-dark" style="margin: 0px 10px 50px 800px;">방명록
-            작성</button>
-        <button onclick="showBox()" type="button" class="btn btn-outline-dark" style="margin: 0px 10px 50px 20px;">방명록
-            목록</button>
+        <div class="guestbook-btn">
+            <button onclick="writeBox()" type="button" class="btn btn-outline-dark">방명록
+                작성</button>
+            <button onclick="showBox()" type="button" class="btn btn-outline-dark">방명록
+                목록</button>
+        </div>
 
         <div class="visit_bacground" id="write_box" style="display: none;">
             <h1>방명록 작성</h1>

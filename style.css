@@ -13,7 +13,7 @@
   list-style: none;
 }
 
-.navbar-items > li:hover {
+.navbar-items>li:hover {
   cursor: pointer;
   font-weight: bold;
 }
@@ -51,9 +51,9 @@
   margin-top: 200px;
 }
 
-.feature > ul,
-.goal > ul,
-.rule > ul {
+.feature>ul,
+.goal>ul,
+.rule>ul {
   width: 18rem;
   height: 18rem;
   background-color: #e2e2e2;
@@ -133,6 +133,7 @@
   height: 300px;
   padding: 15px;
 }
+
 /* 여기까지 멤버1카드 모달 CSS*/
 
 /* 여기서 부터 멤버2모달 CSS*/
@@ -189,6 +190,7 @@
   height: 300px;
   padding: 15px;
 }
+
 /* 여기까지 멤버2카드 모달 CSS*/
 /*멤버 3 모달 css*/
 #member3_modalOpenButton,
@@ -243,6 +245,7 @@
   height: 300px;
   padding: 15px;
 }
+
 /* 여기까지 멤버3 카드 모달 CSS*/
 
 /*멤버 4 모달 css*/
@@ -298,6 +301,7 @@
   height: 300px;
   padding: 15px;
 }
+
 /* 여기까지 멤버 4 모달 css*/
 
 /*멤버 5 모달 css*/
@@ -410,14 +414,14 @@ textarea {
   overflow: auto;
 }
 
-.guestbook {
+.guestbook-title {
   margin-top: 130px;
-  /* background-color: red; */
+  text-align: center;
 }
 
-.guestbook-title {
+.guestbook-btn {
+  margin: 30px 0px;
   display: flex;
   justify-content: center;
-  justify-items: center;
-  text-align: center;
+  gap: 20px;
 }
